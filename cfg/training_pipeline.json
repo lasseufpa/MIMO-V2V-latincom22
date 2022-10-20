@@ -1,7 +1,7 @@
 {
     "epochs" : 200,
     "DataGenerator" : {
-        "datasetPath" : "/home/work/Raymobtime/repos/v2v-beam-selection/data",
+        "datasetPath" : "./data",
         "nTx" : 8,
         "nRx" : 8,
         "batchsize" : 32,

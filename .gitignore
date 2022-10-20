@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Datasets
+*.csv
+*.npz
+ray_tracing_data_v002_carrier60GHz/

@@ -187,7 +187,7 @@ def calc_position_matrix(
     return matrix_tx
 
 
-def getInfoVehicles(sumo_info_file, analysis_area):
+def getInfoVehicles(sumo_info_file, analysis_area_resolution, analysis_area):
     ep = 0
     scene = 0
     # length,width,height in meters
@@ -200,8 +200,6 @@ def getInfoVehicles(sumo_info_file, analysis_area):
 
     polygons_of_interest_idx_list = []
     tx_polygons_of_interest_idx_list = []
-
-    analysis_area_resolution = 1 # Resolution of the matrix image im meters
 
     with open(sumo_info_file) as csvfile:
         reader = csv.DictReader(csvfile, delimiter=",")
@@ -299,9 +297,10 @@ if __name__ == "__main__":
     analysis_area = (743, 416, 771, 626) # Area of analyses from Rosslyn
     x1, y1, x2, y2 = analysis_area
     shape_of_image = (x2 - x1, y2 - y1)
+    analysis_area_resolution = 1 # Resolution of the matrix image im meters
 
     coord_path = "CoordVehiclesRxPerScene.csv"
-    output_matrix = getInfoVehicles(coord_path, analysis_area)
+    output_matrix = getInfoVehicles(coord_path, analysis_area_resolution, analysis_area)
     print(output_matrix.shape)
     outputFileName = 'coord_matrix_input' + '.npz'
     np.savez_compressed(

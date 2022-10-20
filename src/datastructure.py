@@ -14,7 +14,10 @@ def create_data_structure(cfg):
     del input_data
     del output_data
 
-    root = pathlib.Path("../data")
+    root = pathlib.Path("./data")
+
+    if not root.is_dir():
+        root.mkdir()
 
     positionmatrix = np.expand_dims(positionmatrix, axis=-1)
 

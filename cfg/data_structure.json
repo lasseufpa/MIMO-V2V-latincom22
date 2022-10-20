@@ -1,6 +1,6 @@
 {
-    "input_data" : "/home/work/Raymobtime/repos/v2v-beam-selection/data/matrix_positions_v2v_latincom.npz",
-    "output_data" : "/home/work/Raymobtime/repos/v2v-beam-selection/data/beam_output_v2v_latincom.npz",
+    "input_data" : "coord_matrix_input.npz",
+    "output_data" : "beam_output.npz",
     "nTx" : 8,
     "nRx" : 8,
     "nscenes" : 12500,
