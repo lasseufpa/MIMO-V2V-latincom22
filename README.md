@@ -1,6 +1,8 @@
 # MIMO-V2V-latincom22
 
-This repo guide you trhought the process of replicating the results from the **Ray-Tracing MIMO Channel Dataset for Machine Learning Applied to V2V Communication**. First, you'll need to download or generate the dataset to work with, you can either download the baseline dataset from the [Raymobtime site](https://www.lasse.ufpa.br/raymobtime/) or download the raw data and preprocess it. If you wish to use the baseline data, just go to **Step 2**, but if you wish to preprocess your data, and change it, just keep reading.
+This repo guide you trhought the process of replicating the results from the **Ray-Tracing MIMO Channel Dataset for Machine Learning Applied to V2V Communication**, avaliable here: https://ieeexplore.ieee.org/abstract/document/10000783/ 
+
+First, you'll need to download or generate the dataset to work with, you can either download the baseline dataset from the [Raymobtime site](https://www.lasse.ufpa.br/raymobtime/) or download the raw data and preprocess it. If you wish to use the baseline data, just go to **Step 2**, but if you wish to preprocess your data, and change it, just keep reading.
 
 ## Step 1 - Preprocessing
 
